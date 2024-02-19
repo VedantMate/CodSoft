@@ -1,0 +1,61 @@
+.Calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #a7d8ff, #6bb9f0);
+}
+
+body {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+.Calculator input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #ecf5fd;
+}
+
+.Calculator button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #6bb9f0, #a7d8ff);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.Calculator button:hover {
+    background: linear-gradient(to bottom, #4ba7e3, #8fd5ff);
+}
+
+.Calculator button:active {
+    background: linear-gradient(to bottom, #4ba7e3, #8fd5ff);
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
